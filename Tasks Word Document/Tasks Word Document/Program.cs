@@ -56,6 +56,16 @@ namespace Tasks_Word_Document
             //Console.WriteLine($"Dein neuer Text ist {texteingabe.PadRight(30, 'y')}");
             //Console.ReadKey();
 
+
+            //Seite 1, Aufgabe 7: Frage den Nutzer nach einer Texteingabe ( es sollen davor und danach Leerzeilen sein) und gebe die Eingabe ohne Leerzeichen wieder aus 
+            Console.WriteLine("Gib mir einen Text und lasse davor einige leerzeichen");
+            string texteingabe = Console.ReadLine();
+            Console.WriteLine($"Dein Text ohne leerzeichen: {texteingabe.Trim()}");
+            Console.ReadKey();
+
+
+
+
         }
     }
 }
