@@ -64,13 +64,19 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Seite 1, o Aufgabe 8: Frage den Nutzer nach einer Eingabe mit Semikolons( ; ) und Splitte die Eingabe an diesem Zeichen.Gebe die einzelnen Werte auf der Console aus.
-            Console.WriteLine("Gebe mir eine Eingabe mit ; ");
+            //Console.WriteLine("Gebe mir eine Eingabe mit ; ");
+            //string text = Console.ReadLine();
+            //string[] words = text.Split(';');
+            //foreach (string word in words)
+            //{
+            //    Console.WriteLine(word);
+            //}
+            //Console.ReadKey();
+
+            //Seite 1, Aufgabe 9: Frage den Nutzer nach einer Eingabe und überprüfe die Texteingabe des Nutzers, ob die Zeichen „abc“ in der Eingabe enthalten sind. Gebe true oder false auf der Konsole aus. 
+            Console.WriteLine("Bitte gib mir eine Texteingabe");
             string text = Console.ReadLine();
-            string[] words = text.Split(';');
-            foreach (string word in words)
-            {
-                Console.WriteLine(word);
-            }
+            Console.WriteLine(text.Contains("abc"));
             Console.ReadKey();
 
 
