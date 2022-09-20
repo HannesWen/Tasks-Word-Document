@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Runtime.InteropServices;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -80,12 +82,19 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Seite 1, Aufgabe 10: Frage den Nutzer nach einer Texteingabe und gebe den Text in kompletten groß bzw. kompletten Kleinbuchstaben aus
-            Console.WriteLine("Bitte gib mir eine Texteingabe");
-            string text = Console.ReadLine();
-            Console.WriteLine(text.ToUpper());
+            //Console.WriteLine("Bitte gib mir eine Texteingabe");
+            //string text = Console.ReadLine();
+            //Console.WriteLine(text.ToUpper());
+            //Console.ReadKey();
+
+            //Seite 2, Aufgabe1: Programm frägt den Nutzer nach einer Zahl z.B. 20
+            int zahl = 0;
+            for (int i = 0; i <= 20; i++)
+            { 
+                zahl = i + zahl;
+                Console.WriteLine(zahl);
+            }
             Console.ReadKey();
-
-
 
         }
     }
