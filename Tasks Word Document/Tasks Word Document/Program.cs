@@ -88,13 +88,26 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Seite 2, Aufgabe1: Programm frägt den Nutzer nach einer Zahl z.B. 20
-            int zahl = 0;
-            for (int i = 0; i <= 20; i++)
-            { 
-                zahl = i + zahl;
-                Console.WriteLine(zahl);
-            }
-            Console.ReadKey();
+            //int zahl = 0;
+            //for (int i = 0; i <= 20; i++)
+            //{ 
+            //    zahl = i + zahl;
+            //    Console.WriteLine(zahl);
+            //}
+            //Console.ReadKey();
+
+            //Seite 2, Aufgabe 2: Frage nach einer Zahl und zähle von dieser Rückwärts bis 0
+            //Console.WriteLine("Gib mir eine Zahl");
+            //int zahl = Convert.ToInt32(Console.ReadLine());
+            //for (int i = zahl; 0 < zahl; i++)
+            //{
+            //    zahl = zahl - 1;
+            //    Console.WriteLine(zahl);
+            //}
+            //Console.ReadKey();
+
+
+
 
         }
     }
