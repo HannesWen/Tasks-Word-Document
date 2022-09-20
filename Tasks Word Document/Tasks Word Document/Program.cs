@@ -58,12 +58,20 @@ namespace Tasks_Word_Document
 
 
             //Seite 1, Aufgabe 7: Frage den Nutzer nach einer Texteingabe ( es sollen davor und danach Leerzeilen sein) und gebe die Eingabe ohne Leerzeichen wieder aus 
-            Console.WriteLine("Gib mir einen Text und lasse davor einige leerzeichen");
-            string texteingabe = Console.ReadLine();
-            Console.WriteLine($"Dein Text ohne leerzeichen: {texteingabe.Trim()}");
+            //Console.WriteLine("Gib mir einen Text und lasse davor einige leerzeichen");
+            //string texteingabe = Console.ReadLine();
+            //Console.WriteLine($"Dein Text ohne leerzeichen: {texteingabe.Trim()}");
+            //Console.ReadKey();
+
+            //Seite 1, o Aufgabe 8: Frage den Nutzer nach einer Eingabe mit Semikolons( ; ) und Splitte die Eingabe an diesem Zeichen.Gebe die einzelnen Werte auf der Console aus.
+            Console.WriteLine("Gebe mir eine Eingabe mit ; ");
+            string text = Console.ReadLine();
+            string[] words = text.Split(';');
+            foreach (string word in words)
+            {
+                Console.WriteLine(word);
+            }
             Console.ReadKey();
-
-
 
 
         }
