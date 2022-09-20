@@ -32,11 +32,17 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Seite 1, Aufgabe 4: Frage den Nutzer nach einem Text und gebe die Länge des eingegebenen Textes aus z.B. „Die Länge des eingegebenen Texts ist 7“
-            Console.WriteLine("Bitte gib mir einen Text");
-            string textlaenge = Console.ReadLine();
-            Console.WriteLine($"Die länge deines textes ist: {textlaenge.Length}");
-            Console.ReadKey();
+            //Console.WriteLine("Bitte gib mir einen Text");
+            //string textlaenge = Console.ReadLine();
+            //Console.WriteLine($"Die länge deines textes ist: {textlaenge.Length}");
+            //Console.ReadKey();
 
+            //Seite 1, Aufgabe 2b: Frage den Nutzer nach zwei Fließkommazahlen und addiere diese
+            Console.WriteLine("Bitte gib mir zwei Kommazahlen");
+            float zahl1 = float.Parse(Console.ReadLine());
+            float zahl2 = float.Parse(Console.ReadLine());
+            Console.WriteLine($"Die Summe deiner Zahlen ist {zahl1 + zahl2}");
+            Console.ReadKey();
 
         }
     }
