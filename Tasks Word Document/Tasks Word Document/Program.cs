@@ -127,18 +127,35 @@ namespace Tasks_Word_Document
             //Initialisiere ein int-Array von dieser Größe und befülle dieses Int Array in einer Schleife,
             //indem du den Nutzer jedes Mal frägst, welche Zahl eingetragen werden soll.  => Gebe anschließend alle Zahlen nacheinander nochmal aus
 
+            //Console.WriteLine("Wie viele Einträge möchtest du in dein int Array?");
+            //int anzahl = Convert.ToInt32(Console.ReadLine());
+            //int[] zahlen = new int [anzahl];
+            //for (int i = 0; i < zahlen.Length; i++)
+            //{
+            //    Console.WriteLine("Welche Zahl möchtest du hinzufügen");
+            //    zahlen [i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //foreach (var e in zahlen)
+            //{
+            //    Console.WriteLine(e);
+            //}
+            //Console.ReadKey();
+
+            //Aufgabe 4b) Gehe das Int - array durch und gebe den Maximal - Wert aus, Minimal - Wert und den Durchschnitt.
             Console.WriteLine("Wie viele Einträge möchtest du in dein int Array?");
             int anzahl = Convert.ToInt32(Console.ReadLine());
-            int[] zahlen = new int [anzahl];
+            int[] zahlen = new int[anzahl];
             for (int i = 0; i < zahlen.Length; i++)
             {
                 Console.WriteLine("Welche Zahl möchtest du hinzufügen");
-                zahlen [i] = Convert.ToInt32(Console.ReadLine());
+                zahlen[i] = Convert.ToInt32(Console.ReadLine());
             }
-            foreach (var e in zahlen)
-            {
-                Console.WriteLine(e);
-            }
+            double durchschnitt = zahlen.Average();
+            int höchstzahl = zahlen.Max();
+            int kleinstzahl = zahlen.Min();
+            Console.WriteLine($"Durchschnitt {durchschnitt}");
+            Console.WriteLine($"Höchstwert {höchstzahl}");
+            Console.WriteLine($"Kleinstzahl {kleinstzahl}");
             Console.ReadKey();
 
         }
