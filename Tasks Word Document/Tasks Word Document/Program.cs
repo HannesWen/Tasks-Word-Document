@@ -45,10 +45,17 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Seite 1, Aufgabe 5: Frage den Nutzer nach einer Texteingabe und fülle diese mit bis zu 20 Stellen mit einem y von links auf
-            Console.WriteLine("Bitte gib mir eine Texteingabe");
-            string texteingabe = Console.ReadLine();
-            Console.WriteLine($"Dein neuer Text ist {texteingabe.PadLeft(20, 'y')}");
-            Console.ReadKey();
+            //Console.WriteLine("Bitte gib mir eine Texteingabe");
+            //string texteingabe = Console.ReadLine();
+            //Console.WriteLine($"Dein neuer Text ist {texteingabe.PadLeft(20, 'y')}");
+            //Console.ReadKey();
+
+            //Seite 1, Aufgabe 6: Frage den Nutzer nach einer Texteingabe und fülle diese mit bis zu 30 Stellen mit einem y von rechts auf und gebe den veränderten Text wieder aus
+            //Console.WriteLine("Bitte gib mir einen Text");
+            //string texteingabe = Console.ReadLine();
+            //Console.WriteLine($"Dein neuer Text ist {texteingabe.PadRight(30, 'y')}");
+            //Console.ReadKey();
+
         }
     }
 }
