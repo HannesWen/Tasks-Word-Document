@@ -18,13 +18,19 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Seite 1, Aufgabe 2: Frage den Nutzer welche zwei Zahlen er addieren möchte und gebe am Ende das Ergebnis aus
-            Console.WriteLine("Welche 2 Zahlen möchtest du summieren?");
-            int zahl1 = Convert.ToInt32(Console.ReadLine());
-            int zahl2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine($"Die Summe der beiden Zahlen ist {zahl1 + zahl2}");
+            //Console.WriteLine("Welche 2 Zahlen möchtest du summieren?");
+            //int zahl1 = Convert.ToInt32(Console.ReadLine());
+            //int zahl2 = Convert.ToInt32(Console.ReadLine());
+            //Console.WriteLine($"Die Summe der beiden Zahlen ist {zahl1 + zahl2}");
+            //Console.ReadKey();
+
+            //Seite 1, Aufgabe 3: Frage den Nutzer nach einem Text und ersetze im Text alle vorkommenden „U“ und „u“ durch „G“ und „g“
+
+            Console.WriteLine("bitte gib mir einen Text");
+            string text = Console.ReadLine();
+            string replaced_text = text.Replace("U", "u").Replace("G", "g");
+            Console.Write($"Dein neuer Text lautet {replaced_text}");
             Console.ReadKey();
-
-
         }
     }
 }
