@@ -106,7 +106,22 @@ namespace Tasks_Word_Document
             //}
             //Console.ReadKey();
 
+            //Seite 2, Aufgabe 3: Laufe mit einer For-Schleife über die Namen der Azubis & Studenten. Wenn der Name des Azubis ein „e“ enthält, gebe den Namen aus, 
+            //ansonsten nicht. Wiederhole das Ganze und lass den Nutzer einen Buchstaben bestimmen, nach dem gesucht wird.
 
+            Console.WriteLine("Nach welchem Buchstaben möchtest du suchen?");
+            string search = Console.ReadLine();
+            //string[$"Jan{,} Erwin{,} Lukas{,} Jonas{,} Marcello{,} Mona{,} Philipp{,} Leon{,} Robert{,} Robin{,} Hannes"]
+            string[] namen = { "Jan", "Erwin", "Lukas", "Jonas", "Marcello", "Mona", "Philipp", "Leon", "Robert", "Robin", "Hannes" };
+            //string[] fzu = { $"Jan{,} Erwin{,} Lukas{,} Jonas{,} Marcello{,} Mona{,} Philipp{,} Leon{,} Robert{,} Robin{,} Hannes" };
+            for (int i = 0; i < namen.Length; i++)
+            {
+                if (namen[i].Contains(search))
+                {
+                    Console.WriteLine(namen[i]);
+                }
+            }
+            Console.ReadKey();
 
 
         }
