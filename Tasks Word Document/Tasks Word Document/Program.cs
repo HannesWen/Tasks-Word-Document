@@ -74,10 +74,17 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Seite 1, Aufgabe 9: Frage den Nutzer nach einer Eingabe und überprüfe die Texteingabe des Nutzers, ob die Zeichen „abc“ in der Eingabe enthalten sind. Gebe true oder false auf der Konsole aus. 
+            //Console.WriteLine("Bitte gib mir eine Texteingabe");
+            //string text = Console.ReadLine();
+            //Console.WriteLine(text.Contains("abc"));
+            //Console.ReadKey();
+
+            //Seite 1, Aufgabe 10: Frage den Nutzer nach einer Texteingabe und gebe den Text in kompletten groß bzw. kompletten Kleinbuchstaben aus
             Console.WriteLine("Bitte gib mir eine Texteingabe");
             string text = Console.ReadLine();
-            Console.WriteLine(text.Contains("abc"));
+            Console.WriteLine(text.ToUpper());
             Console.ReadKey();
+
 
 
         }
