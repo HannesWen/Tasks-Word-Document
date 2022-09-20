@@ -6,6 +6,7 @@ using System.Runtime.InteropServices;
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Tasks_Word_Document
 {
@@ -108,22 +109,39 @@ namespace Tasks_Word_Document
 
             //Seite 2, Aufgabe 3: Laufe mit einer For-Schleife über die Namen der Azubis & Studenten. Wenn der Name des Azubis ein „e“ enthält, gebe den Namen aus, 
             //ansonsten nicht. Wiederhole das Ganze und lass den Nutzer einen Buchstaben bestimmen, nach dem gesucht wird.
+            //Console.WriteLine("Nach welchem Buchstaben möchtest du suchen?");
+            //string search = Console.ReadLine();
+            ////string[$"Jan{,} Erwin{,} Lukas{,} Jonas{,} Marcello{,} Mona{,} Philipp{,} Leon{,} Robert{,} Robin{,} Hannes"]
+            //string[] namen = { "Jan", "Erwin", "Lukas", "Jonas", "Marcello", "Mona", "Philipp", "Leon", "Robert", "Robin", "Hannes" };
+            ////string[] fzu = { $"Jan{,} Erwin{,} Lukas{,} Jonas{,} Marcello{,} Mona{,} Philipp{,} Leon{,} Robert{,} Robin{,} Hannes" };
+            //for (int i = 0; i < namen.Length; i++)
+            //{
+            //    if (namen[i].Contains(search))
+            //    {
+            //        Console.WriteLine(namen[i]);
+            //    }
+            //}
+            //Console.ReadKey();
 
-            Console.WriteLine("Nach welchem Buchstaben möchtest du suchen?");
-            string search = Console.ReadLine();
-            //string[$"Jan{,} Erwin{,} Lukas{,} Jonas{,} Marcello{,} Mona{,} Philipp{,} Leon{,} Robert{,} Robin{,} Hannes"]
-            string[] namen = { "Jan", "Erwin", "Lukas", "Jonas", "Marcello", "Mona", "Philipp", "Leon", "Robert", "Robin", "Hannes" };
-            //string[] fzu = { $"Jan{,} Erwin{,} Lukas{,} Jonas{,} Marcello{,} Mona{,} Philipp{,} Leon{,} Robert{,} Robin{,} Hannes" };
-            for (int i = 0; i < namen.Length; i++)
+            //Aufgabe 4: Frage den Nutzer  wie viele Einträge er in einem int-Array haben möchte.
+            //Initialisiere ein int-Array von dieser Größe und befülle dieses Int Array in einer Schleife,
+            //indem du den Nutzer jedes Mal frägst, welche Zahl eingetragen werden soll.  => Gebe anschließend alle Zahlen nacheinander nochmal aus
+
+            Console.WriteLine("Wie viele Einträge möchtest du in dein int Array?");
+            int anzahl = Convert.ToInt32(Console.ReadLine());
+            int[] zahlen = new int [anzahl];
+            for (int i = 0; i < zahlen.Length; i++)
             {
-                if (namen[i].Contains(search))
-                {
-                    Console.WriteLine(namen[i]);
-                }
+                Console.WriteLine("Welche Zahl möchtest du hinzufügen");
+                zahlen [i] = Convert.ToInt32(Console.ReadLine());
+            }
+            foreach (var e in zahlen)
+            {
+                Console.WriteLine(e);
             }
             Console.ReadKey();
 
-
         }
+
     }
 }
