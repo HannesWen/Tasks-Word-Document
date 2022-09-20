@@ -142,21 +142,48 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Aufgabe 4b) Gehe das Int - array durch und gebe den Maximal - Wert aus, Minimal - Wert und den Durchschnitt.
-            Console.WriteLine("Wie viele Einträge möchtest du in dein int Array?");
-            int anzahl = Convert.ToInt32(Console.ReadLine());
-            int[] zahlen = new int[anzahl];
-            for (int i = 0; i < zahlen.Length; i++)
+            //Console.WriteLine("Wie viele Einträge möchtest du in dein int Array?");
+            //int anzahl = Convert.ToInt32(Console.ReadLine());
+            //int[] zahlen = new int[anzahl];
+            //for (int i = 0; i < zahlen.Length; i++)
+            //{
+            //    Console.WriteLine("Welche Zahl möchtest du hinzufügen");
+            //    zahlen[i] = Convert.ToInt32(Console.ReadLine());
+            //}
+            //double durchschnitt = zahlen.Average();
+            //int höchstzahl = zahlen.Max();
+            //int kleinstzahl = zahlen.Min();
+            //Console.WriteLine($"Durchschnitt {durchschnitt}");
+            //Console.WriteLine($"Höchstwert {höchstzahl}");
+            //Console.WriteLine($"Kleinstzahl {kleinstzahl}");
+            //Console.ReadKey();
+
+            //Seite 2, Aufgabe 5: Fizz-Buzz-Spiel: Gehe alle Zahlen von 1 bis 100 durch. Ist die Zahl ein Vielfaches von 3 [(Bedingung: index % 3 == 0)
+            //=> % ist der Modulo Operator, welcher den Rest einer Division angibt.] dann gebe Fizz aus, ist die Zahl ein Vielfaches von 5 gebe Buzz aus,
+            //und wenn die Zahl ein Vielfaches von 5 und 3(=> z.B. 15) gebe FizzBuzz anstatt die Zahl aus. 
+
+            for (int i = 0; i < 100; i++)
             {
-                Console.WriteLine("Welche Zahl möchtest du hinzufügen");
-                zahlen[i] = Convert.ToInt32(Console.ReadLine());
+                if (i % 3 == 0 && i % 5 == 0)
+                {
+                    Console.WriteLine("FizzBuzz");
+                }
+                else if (i % 3 == 0)
+                {
+                    Console.WriteLine("Fizz");
+                }
+                else if (i % 5 == 0)
+                {
+                    Console.WriteLine("Buzz");
+                }
+                else
+                {
+                    Console.WriteLine(i);
+                }
             }
-            double durchschnitt = zahlen.Average();
-            int höchstzahl = zahlen.Max();
-            int kleinstzahl = zahlen.Min();
-            Console.WriteLine($"Durchschnitt {durchschnitt}");
-            Console.WriteLine($"Höchstwert {höchstzahl}");
-            Console.WriteLine($"Kleinstzahl {kleinstzahl}");
             Console.ReadKey();
+
+
 
         }
 
