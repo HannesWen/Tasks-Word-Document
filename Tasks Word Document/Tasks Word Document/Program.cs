@@ -38,12 +38,17 @@ namespace Tasks_Word_Document
             //Console.ReadKey();
 
             //Seite 1, Aufgabe 2b: Frage den Nutzer nach zwei Fließkommazahlen und addiere diese
-            Console.WriteLine("Bitte gib mir zwei Kommazahlen");
-            float zahl1 = float.Parse(Console.ReadLine());
-            float zahl2 = float.Parse(Console.ReadLine());
-            Console.WriteLine($"Die Summe deiner Zahlen ist {zahl1 + zahl2}");
-            Console.ReadKey();
+            //Console.WriteLine("Bitte gib mir zwei Kommazahlen");
+            //float zahl1 = float.Parse(Console.ReadLine());
+            //float zahl2 = float.Parse(Console.ReadLine());
+            //Console.WriteLine($"Die Summe deiner Zahlen ist {zahl1 + zahl2}");
+            //Console.ReadKey();
 
+            //Seite 1, Aufgabe 5: Frage den Nutzer nach einer Texteingabe und fülle diese mit bis zu 20 Stellen mit einem y von links auf
+            Console.WriteLine("Bitte gib mir eine Texteingabe");
+            string texteingabe = Console.ReadLine();
+            Console.WriteLine($"Dein neuer Text ist {texteingabe.PadLeft(20, 'y')}");
+            Console.ReadKey();
         }
     }
 }
